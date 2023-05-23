@@ -26,8 +26,8 @@ padding-right: 15px;
   
 }
 :root{
-  --primary-color:#22254b;
-  --secondary-color: #373b69;
+  --primary-color:#3f0e30;
+  --secondary-color: #721c55;
  
 }
 
@@ -47,37 +47,35 @@ header{
 }
 .search{
   background-color: transparent;
-  border: 2px solid green;
+  border: 2px solid rgb(68, 7, 124);
   padding:0.5rem 1rem;
   border-radius: 50px;
   font-size: 1rem;
-  color:#fff;
+  color:#f0deec;
   font-family: inherit;
 }
 
 .search:focus{
   outline:0;
-  background-color: var(--primary-color);
+  background-color: rgba(145, 86, 140, 0.397);
 }
 
-.search::placeholder{
-  color: #7378c5;
-}
+
 
 .movie-info {
-  color: #eee;
+  color: #f4edf7;
   display: flex;
   align-items: center;
   justify-content:space-between;
   gap:0.2rem;
   padding: 0.5rem 1rem 1rem;
   letter-spacing: 0.5px;
-  background-color: #676879;
+  background-color: #503345;
   width:300px;
   height: 70px;
 }
 .vote{
-  color: aqua;
+  color: rgb(79, 167, 226);
 }
 .movie-info h3 {
   margin-top: 0;
@@ -101,5 +99,29 @@ header{
 display: flex;
 flex-wrap: wrap;
 gap: 40px;
-  
+margin-bottom: 30px;
   }
+
+  .js-load-more{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--secondary-color);
+    color: var(--primary-licht-color);
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 170px;
+    padding: 16px 32px;
+    display: block;
+    margin:auto;
+    transition: background-color var(--transitionn-dur-and-func);
+}
+.js-load-more:hover,
+.js-load-more:focus {
+      background-color: rgb(139, 6, 62);
+}
